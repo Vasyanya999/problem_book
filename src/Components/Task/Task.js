@@ -35,6 +35,7 @@ export default function Task(props) {
                     value={defaultValue}
                     cols='300'
                     rows='100'
+                    
                 />
             </div>
         </div>
