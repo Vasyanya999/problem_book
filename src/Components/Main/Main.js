@@ -5,8 +5,6 @@ import ApearWin from "../ApearWin/ApearWin";
 import Projects from "../Projects/Projects";
 
 export default function Main (props){
-  
-  
     let apearWinCh = "";
     if (props.apearWinChekProj) {
       apearWinCh = (
@@ -44,7 +42,7 @@ export default function Main (props){
           option=''
         />
       );
-    } 
+    }
     return (
       <div className='Main container p-0'>
         <Nav
@@ -53,7 +51,6 @@ export default function Main (props){
           switchProject={props.switchProject}
           currentProject={props.currentProject}
         />
-        
 
         {apearWinCh}
 
@@ -61,7 +58,10 @@ export default function Main (props){
           projects={props.projects}
           currentProject={props.currentProject}
           selectedTask={props.selectedTask}
+          selectTask={props.selectTask}
           saveTextarea={props.saveTextarea}
+          currentTask={props.currentTask}
+          exit={props.exit}
         />
       </div>
     );

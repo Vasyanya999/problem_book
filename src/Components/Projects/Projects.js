@@ -18,8 +18,11 @@ export default function Projects(props) {
               key={i}
               projects={props.projects}
               currentProject={props.currentProject}
+              selectTask={props.selectTask}
               selectedTask={props.selectedTask}
               saveTextarea={props.saveTextarea}
+              currentTask={props.currentTask}
+              exit={props.exit}
             />
           );
         })}
